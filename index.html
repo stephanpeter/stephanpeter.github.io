@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stephan Peter, PhD | Applied Mathematics & Sustainability</title>
+<meta name="description" content="Research in applied mathematics, computational science, sustainability and innovation by Stephan Peter.">
+<style>
+:root{--ink:#173342;--muted:#536772;--accent:#147963;--paper:#f7faf8;--line:#d8e4e1}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,sans-serif;line-height:1.65}header{display:flex;justify-content:space-between;align-items:center;padding:20px max(5vw,24px);background:#102d3b;color:white;gap:24px;flex-wrap:wrap}header a{color:white;text-decoration:none}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:.9rem}.brand{font-weight:800;letter-spacing:.09em}.brand span{font-weight:400;color:#a7ead7}main{max-width:1200px;margin:auto;padding:0 5vw}section{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}.hero{display:grid;grid-template-columns:1.35fr 1fr;align-items:center;gap:30px;background:#102d3b;color:white;margin:0 -5vw;padding:70px 5vw;border-radius:0 0 24px 24px}.hero svg{width:100%;height:auto}.eyebrow{font-size:.74rem;font-weight:750;letter-spacing:.16em;color:var(--accent)}.hero .eyebrow{color:#a7ead7}h1,h2,h3{line-height:1.15;margin:.4em 0}h1{font-size:clamp(2.6rem,5vw,4.5rem);letter-spacing:-.055em}h2{font-size:clamp(1.8rem,3vw,2.6rem);letter-spacing:-.035em}h3{font-size:1.4rem}.lead{font-size:1.22rem;color:#b8e5da}.btn{display:inline-block;background:#a7ead7;color:#102d3b;padding:10px 20px;border-radius:6px;font-weight:650;text-decoration:none;margin-top:12px}.secondary{background:#d9eee8}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}article{background:white;border:1px solid var(--line);border-top:3px solid var(--accent);padding:25px;border-radius:10px}article span,small{font-size:.75rem;color:var(--muted);letter-spacing:.06em}a{color:var(--accent)}.papers a{display:block;padding:18px 0;border-bottom:1px solid var(--line);font-weight:650;text-decoration:none}.papers small{display:block;font-weight:400}.muted{color:var(--muted)}footer{padding:30px 5vw;color:var(--muted);font-size:.85rem;text-align:center}a:focus-visible{outline:3px solid #e4a344;outline-offset:4px}@media(max-width:700px){.hero,.grid{grid-template-columns:1fr}.hero svg{max-height:200px}section{padding:42px 0}nav{gap:12px}}
+# Personal academic website
+
+A lightweight static website for Stephan Peter, PhD. No dependencies or build step. Preview by opening index.html in a browser. To publish, create a public repository named `stephanpeter.github.io`, upload index.html and style.css, then enable Settings > Pages > Deploy from a branch > main / (root). Do not overwrite an existing repository without checking it first.
+
+Draft: verify publication titles and DOI metadata, add a confirmed public contact address, ORCID/Scholar links, full publication list and public CV before publication. No private material is included. Quarto was not installed in the preparation environment; this first version uses plain HTML/CSS for direct compatibility with GitHub Pages.
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="#home">SP <span> / RESEARCH</span>
+</a>
+<nav>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#innovation">Innovation</a>
+<a href="#teaching">Teaching</a>
+<a href="#about">About</a>
+</nav>
+</header>
+<main id="home">
+<section class="hero">
+<div>
+<p class="eyebrow">MATHEMATICS FOR COMPLEX CHALLENGES</p>
+<h1>Stephan Peter, PhD</h1>
+<p class="lead">Applied Mathematics · Computational Science · Sustainability · Innovation</p>
+<p>I develop mathematical and computational approaches to understand complex systems and address scientific and environmental challenges. My research connects fundamental questions of dynamics and organization with modelling, optimization and sustainable technologies.</p>
+<a class="btn" href="#research">Explore my research →</a>
+</div>
+<svg viewBox="0 0 420 330" role="img" aria-label="Abstract network of interacting systems">
+<defs>
+<radialGradient id="g">
+<stop stop-color="#7bd7bf" stop-opacity=".25"/>
+<stop offset="1" stop-color="#7bd7bf" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<circle cx="210" cy="165" r="160" fill="url(#g)"/>
+<g fill="none" stroke="#8bd6c6" stroke-width="1.2" opacity=".7">
+<ellipse cx="210" cy="165" rx="170" ry="68" transform="rotate(-30 210 165)"/>
+<ellipse cx="210" cy="165" rx="170" ry="68" transform="rotate(30 210 165)"/>
+<ellipse cx="210" cy="165" rx="170" ry="68" transform="rotate(90 210 165)"/>
+<path d="M65 120L210 165 355 210 310 78 145 268 65 120 310 78M145 268L355 210"/>
+</g>
+<g fill="#a7ead7">
+<circle cx="65" cy="120" r="6"/>
+<circle cx="210" cy="165" r="10"/>
+<circle cx="355" cy="210" r="5"/>
+<circle cx="310" cy="78" r="7"/>
+<circle cx="145" cy="268" r="6"/>
+</g>
+</svg>
+</section>
+<section id="research">
+<p class="eyebrow">01 / RESEARCH</p>
+<h2>Connecting theory and application</h2>
+<div class="grid">
+<article>
+<span>01 / THEORY</span>
+<h3>Complex & Dynamical Systems</h3>
+<p>Mathematical modelling of reaction networks, chemical organization theory, emergence, transitions and complex system dynamics.</p>
+</article>
+<article>
+<span>02 / ENVIRONMENT</span>
+<h3>Sustainability & Environmental Systems</h3>
+<p>Ecological modelling, dryland restoration, sustainable water sources and the interplay between energy, water and environmental resilience.</p>
+</article>
+<article>
+<span>03 / METHODS</span>
+<h3>Scientific Computing & AI</h3>
+<p>Numerical simulation, optimization, predictive control, time series analysis and data-driven methods for scientific discovery.</p>
+</article>
+<article>
+<span>04 / EXPLORATORY RESEARCH</span>
+<h3>Computational Neuroscience</h3>
+<p>Methodological questions in EEG, movement-related information and neurophysiological measurement, with an emphasis on rigorous validation.</p>
+</article>
+</div>
+</section>
+<section id="publications">
+<p class="eyebrow">02 / PUBLICATIONS</p>
+<h2>Selected research outputs</h2>
+<p>Research spanning mathematical theory, computational methods, biological systems and environmental modelling.</p>
+<div class="papers">
+<a href="https://doi.org/10.46793/match.96-3.03426">Chemical organization theory — review <small>MATCH · 2026 · DOI</small>
+</a>
+<a href="https://doi.org/10.1016/j.ecolmodel.2026.111685">Ecological modelling and restoration in Morocco <small>Ecological Modelling · 2026 · Accepted · DOI</small>
+</a>
+<a href="https://doi.org/10.3390/su14095525">Performance Analysis of a Solar-Powered Multi-Purpose Supply Container <small>Sustainability · 2022 · DOI</small>
+</a>
+</div>
+<p class="muted">Additional publications have appeared in SIAM Journal on Applied Dynamical Systems, Scientific Reports, Mathematics, Biomedicines and Environmental Earth Sciences.</p>
+</section>
+<section id="innovation">
+<p class="eyebrow">03 / INNOVATION</p>
+<h2>From mathematical models to real-world challenges</h2>
+<div class="grid">
+<article>
+<h3>Sustainable water and restoration</h3>
+<p>Research on atmospheric water harvesting, renewable energy integration and ecological restoration in water-limited environments.</p>
+<a href="https://nathal-energy.com/">Nathal Energy ↗</a>
+</article>
+<article>
+<h3>Exploratory neurophysiology</h3>
+<p>Research initiative exploring the relationship between measurable neurophysiological activity and complex creative outputs. Proposed investigations require appropriate validation and ethics review.</p>
+</article>
+</div>
+</section>
+<section id="teaching">
+<p class="eyebrow">04 / TEACHING</p>
+<h2>Mathematics as a scientific language</h2>
+<p>University teaching across analysis, linear algebra, applied mathematics, probability, optimization, differential equations and scientific computing. My teaching connects mathematical foundations to computational practice and interdisciplinary applications.</p>
+</section>
+<section id="about">
+<p class="eyebrow">05 / ABOUT & COLLABORATION</p>
+<h2>Independent research perspective</h2>
+<p>I am an applied mathematician with a doctorate from Friedrich Schiller University Jena (2022) and a permanent university teaching appointment at Ernst Abbe University of Applied Sciences Jena. I welcome interdisciplinary collaboration in mathematical modelling, computational science and sustainability.</p>
+<a class="btn secondary" href="https://github.com/stephanpeter">GitHub profile ↗</a>
+</section>
+</main>
+<footer>Stephan Peter · Personal academic website · Views and research presentation are personal.</footer>
+</body>
+</html>
