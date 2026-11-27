@@ -22,8 +22,9 @@ function filterPapers(topic) {
     button.classList.toggle('active', active);
     button.setAttribute('aria-pressed', String(active));
   });
+  document.querySelectorAll('.pub-group').forEach(group => { group.hidden = ![...group.querySelectorAll('.paper')].some(paper => !paper.hidden); });
   const status = document.querySelector('#filter-status');
-  if (status) status.textContent = `${count} selected publications shown`;
+  if (status) status.textContent = `${count} entries shown`;
 }
 document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => filterPapers(button.dataset.filter)));
 document.querySelectorAll('[data-filter-link]').forEach(link => link.addEventListener('click', () => filterPapers(link.dataset.filterLink)));
